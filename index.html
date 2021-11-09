@@ -1,0 +1,98 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="site.css" />
+
+  <title>Criar Conta</title>
+</head>
+
+<body>
+  <div class="base">
+    <div class="cabecalho">
+      <div class="titulo">
+        <h1>LUSETT</h1>
+      </div>
+      <div class="subtitulo">
+        <h2>Em compras a partir de R$300,00</h2>
+        <h3>FRETE GRÁTIS</h3>
+      </div>
+    </div>
+    <div class="dados">
+      <form>
+        <h1>Insira seus Dados</h1>
+
+        <div class="form-group divide">
+          <div class="form-single">
+            <label for="name">nome</label>
+            <input type="text" id="name" class="form-input" required name="name"/>
+          </div>
+          <div class="form-single">
+            <label for="lastname">sobrenome</label>
+            <input type="text" id="lastname" class="form-input" required name="lastname"/>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="form-single">
+            <label for="emailregistro">Email</label>
+            <input type="email" id="emairegistro" class="form-input" required name="email"/>
+          </div>
+        </div>
+
+        <div class="form-group divide">
+          <div class="form-single">
+            <label for="datanasci">Daata de Nascimento</label>
+            <input type="date" id="datanasci" class="form-input" required />
+          </div>
+          <div class="form-single">
+            <label for="generoinfo">Gênero</label>
+            <select name="generoinfo" id="genero">
+              <option value="masc">Masculino</option>
+              <option value="femin">Feminino</option>
+              <option value="nobi">Não binario</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group divide">
+          <div class="form-single">
+            <label for="cpf">cpf</label>
+            <input type="number" id="cpf" class="form-input" required name="cpf"/>
+          </div>
+          <div class="form-single">
+            <label for="telefone">telefone</label>
+            <input type="number" id="telefone" class="form-input" required name="tel"/>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="form-single">
+            <label for="senha">coloque sua senha</label>
+            <input type="password" id="senha" class="form-input" required name="senha"/>
+          </div>
+        </div>
+
+        <div class="form-group final">
+          <div class="form-single check">
+            <input type="checkbox" id="confirmar" class="form-input" required name="receberPromo"/>
+            <label for="confirmar">Receber promoções em seu email</label>
+          </div>
+        </div>
+
+        <div class="form-group final divide">
+          <div class="form-single">
+            <p>Ao criar uma conta você está de acordo com nossa<br>política de privacidade.</p>
+          </div>
+          <div class="form-single">
+            <input type="button" id="finalizar" class="form-input" value="Enviar"/>
+          </div>
+
+        </div>
+      </form>
+
+
+    </div>
+</body>
